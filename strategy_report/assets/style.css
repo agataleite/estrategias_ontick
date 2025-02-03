@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+
+/*Header firt page*/
+.header-title {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-sup {
+  color: #00bdaa;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.header-subtitle {
+  color: #00bdaa;
+  font-size: 1.2rem;
+  text-align: center;
+  border-bottom: 2px solid #00bdaa;
+  padding-bottom: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  text-align: center;
+
+  /*Espaçamento entre o card de cima de baixo*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  /*Espaçamento entre a borda de cima e de baixo do card com o texto precisa ser igual */
+  padding-top: 1rem;
+
+}
+
+.image {
+  display: inline-block;
+  width: auto; /* Ajuste a largura conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  padding-left: 100px;
+  padding-right: 0px;
+
+}
+
+.auto-height {
+  height: 500px;
+}
+
+.textarea {
+  font-family: 'Poppins', sans-serif;
+  padding: 0 50px; /* Adiciona padding ao redor do texto */
+}
+
+.card-title {
+  font-weight: 600; /* Semi bold */
+}
+
+.text-success {
+  color: #28a745 !important;  /* Verde */
+  font-weight: 600;
+}
+
+.text-danger {
+  color: #dc3545 !important;  /* Vermelho */
+  font-weight: 600;
+}
+
+.text-muted {
+  color: #6c757d !important;  /* Cinza, neutro */
+  font-weight: 600;
+}
+
+/*Classname = title usar a fonte Poppins SemiBold */
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.text-image {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 100px;
+  padding-right: 0px;
+  /*negrito*/
+  font-weight: 600;
+}
+
+.text_auto_height {
+  font-family: 'Poppins', sans-serif;
+  padding: 0 50px;
+}
+
+.text-container {
+  padding: 0 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table-container {
+  padding: 0 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-row {
+  padding: 0 50px;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+
+    @page {
+        margin: 0; /* Remove as margens da página impressa */
+    }
+  .print-background {
+      background-color: #192231 !important;
+      font-family: 'Poppins', sans-serif;
+      
+  }
+
+  .page-break {
+    page-break-before: always; /* Força uma quebra de página antes do elemento */
+    break-before: page; /* Para navegadores que suportam o CSS mais recente */
+}  
+}
+
+.graph {
+  translate: 0px -5px;    
+}
