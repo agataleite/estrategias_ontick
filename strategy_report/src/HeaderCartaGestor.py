@@ -36,13 +36,14 @@ class Header:
                 html.Div(
                     children=[
                         html.H1(
-                            "{}".format(self.strategy_info[0]), className='header-title',
+                            #"{}".format(self.strategy_info[0]), className='header-title',
+                            "Carta do Analista", className='header-title',
                         ),
                         # html.H3(
                         #     "Carta do Analista".format(self.start_date, self.end_date), className='header-sup',
                         # ),
                         html.H3(
-                            "Carta do Analista".format(self.start_date, self.end_date), className='header-subtitle',
+                            "Referente a Janeiro de 2025".format(self.start_date, self.end_date), className='header-subtitle',
                         ),
                         html.Div(
                             "Atualizado em: {}".format(datetime.datetime.now().strftime("%d/%m/%Y")),
@@ -125,11 +126,12 @@ class Header:
                     }
                 ),
                 html.Div(
-                    html.Img(src="/assets/ontick_footer.png"),
+                    html.Img(src="/assets/ontick_footer7.png"),
                     style={
-                        "display": "flex",
+                        "width": "100%",
+                        "display": "block",
                         "justifyContent": "space-between",
-                        "alignItems": "center",
+                        #"alignItems": "center",
                         "color": "white",
                         "borderTop": "1px solid #00bdaa",
                         "paddingTop": "20px",

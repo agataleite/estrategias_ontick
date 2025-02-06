@@ -37,6 +37,8 @@ class Header:
                     children=[
                         html.H1(
                             "{}".format(self.strategy_info[0]), className='header-title',
+                            #"Carta do Analista", className='header-title',
+
                         ),
                         html.H3(
                             "{} - {}".format(self.start_date, self.end_date), className='header-subtitle',
@@ -122,9 +124,10 @@ class Header:
                     }
                 ),
                 html.Div(
-                    html.Img(src="/assets/ontick_footer.png"),
+                    html.Img(src="/assets/ontick_footer2.png"),
                     style={
-                        "display": "flex",
+                        "width": "100%",
+                        "display": "block",
                         "justifyContent": "space-between",
                         "alignItems": "center",
                         "color": "white",

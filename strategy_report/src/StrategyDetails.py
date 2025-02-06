@@ -110,9 +110,11 @@ class StrategyDetails:
                     sql = f"""
                         SELECT position_time_current, position_type, investment_id, position_profit from tb_positions tp 
                         where investment_id in (SELECT investment_id from tb_track_record ttr where tr_id IN (
-                        SELECT track_record_id from tb_strategies ts where strategy_id = {self.strategy_id}))
+                        SELECT track_record_id from tb_strategies ts where strategy_id = {self.strategy_id})) 
                         """                                        
                         # and position_time_open >="2024-04-01";
+                        # and position_time_open <= "2025-01-31";
+                        
                     cursor.execute(sql)
                     result = pd.DataFrame(cursor.fetchall(), columns=['datetime', 'position_type', 'investment_id', 'position_profit'])
                     
